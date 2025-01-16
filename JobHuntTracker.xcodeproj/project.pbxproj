@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4E0CFCDC439F5718C62D41B7 /* Pods_JobHuntTracker_JobHuntTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581601CB915868B4AA54A81D /* Pods_JobHuntTracker_JobHuntTrackerUITests.framework */; };
+		733195805D1611FEF36CA49A /* Pods_JobHuntTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3986B33113E99279F0EB56 /* Pods_JobHuntTrackerTests.framework */; };
+		B51BB50AB7875D7A5D999366 /* Pods_JobHuntTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED819DA68C1E7CB2605676AA /* Pods_JobHuntTracker.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		DE538BA12D38DCB600C55377 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +30,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		149DD3F325C0DC88439E5C80 /* Pods-JobHuntTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHuntTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-JobHuntTrackerTests/Pods-JobHuntTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		23265CF8C24E5CFCA51ED99A /* Pods-JobHuntTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHuntTracker.debug.xcconfig"; path = "Target Support Files/Pods-JobHuntTracker/Pods-JobHuntTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		581601CB915868B4AA54A81D /* Pods_JobHuntTracker_JobHuntTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobHuntTracker_JobHuntTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97E1D99461DE5C4E362E5268 /* Pods-JobHuntTracker-JobHuntTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHuntTracker-JobHuntTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-JobHuntTracker-JobHuntTrackerUITests/Pods-JobHuntTracker-JobHuntTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA16D22C72DCA89F7C3CE6D2 /* Pods-JobHuntTracker-JobHuntTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHuntTracker-JobHuntTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-JobHuntTracker-JobHuntTrackerUITests/Pods-JobHuntTracker-JobHuntTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B570C279936FC4629C592791 /* Pods-JobHuntTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHuntTracker.release.xcconfig"; path = "Target Support Files/Pods-JobHuntTracker/Pods-JobHuntTracker.release.xcconfig"; sourceTree = "<group>"; };
+		CA3986B33113E99279F0EB56 /* Pods_JobHuntTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobHuntTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB7E7323439C69FE0AE9AFA /* Pods-JobHuntTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHuntTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-JobHuntTrackerTests/Pods-JobHuntTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 		DE538B872D38DCB500C55377 /* JobHuntTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobHuntTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE538BA02D38DCB600C55377 /* JobHuntTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobHuntTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE538BAA2D38DCB600C55377 /* JobHuntTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobHuntTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED819DA68C1E7CB2605676AA /* Pods_JobHuntTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobHuntTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51BB50AB7875D7A5D999366 /* Pods_JobHuntTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				733195805D1611FEF36CA49A /* Pods_JobHuntTrackerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +96,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E0CFCDC439F5718C62D41B7 /* Pods_JobHuntTracker_JobHuntTrackerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FCC59567BD2B295A740FD79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED819DA68C1E7CB2605676AA /* Pods_JobHuntTracker.framework */,
+				581601CB915868B4AA54A81D /* Pods_JobHuntTracker_JobHuntTrackerUITests.framework */,
+				CA3986B33113E99279F0EB56 /* Pods_JobHuntTrackerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DE538B7E2D38DCB500C55377 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +120,8 @@
 				DE538BA32D38DCB600C55377 /* JobHuntTrackerTests */,
 				DE538BAD2D38DCB600C55377 /* JobHuntTrackerUITests */,
 				DE538B882D38DCB500C55377 /* Products */,
+				EFA376E05848C3A5BADA4790 /* Pods */,
+				2FCC59567BD2B295A740FD79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +135,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		EFA376E05848C3A5BADA4790 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23265CF8C24E5CFCA51ED99A /* Pods-JobHuntTracker.debug.xcconfig */,
+				B570C279936FC4629C592791 /* Pods-JobHuntTracker.release.xcconfig */,
+				97E1D99461DE5C4E362E5268 /* Pods-JobHuntTracker-JobHuntTrackerUITests.debug.xcconfig */,
+				AA16D22C72DCA89F7C3CE6D2 /* Pods-JobHuntTracker-JobHuntTrackerUITests.release.xcconfig */,
+				149DD3F325C0DC88439E5C80 /* Pods-JobHuntTrackerTests.debug.xcconfig */,
+				DBB7E7323439C69FE0AE9AFA /* Pods-JobHuntTrackerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE538BB32D38DCB600C55377 /* Build configuration list for PBXNativeTarget "JobHuntTracker" */;
 			buildPhases = (
+				837782F4BE6FEC6C5D5F69F6 /* [CP] Check Pods Manifest.lock */,
 				DE538B832D38DCB500C55377 /* Sources */,
 				DE538B842D38DCB500C55377 /* Frameworks */,
 				DE538B852D38DCB500C55377 /* Resources */,
+				CA9F277CB6CA2B794351DED5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,8 +169,6 @@
 				DE538B892D38DCB500C55377 /* JobHuntTracker */,
 			);
 			name = JobHuntTracker;
-			packageProductDependencies = (
-			);
 			productName = JobHuntTracker;
 			productReference = DE538B872D38DCB500C55377 /* JobHuntTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +177,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE538BB82D38DCB600C55377 /* Build configuration list for PBXNativeTarget "JobHuntTrackerTests" */;
 			buildPhases = (
+				CF0ED6326117621F6F7DA1D5 /* [CP] Check Pods Manifest.lock */,
 				DE538B9C2D38DCB600C55377 /* Sources */,
 				DE538B9D2D38DCB600C55377 /* Frameworks */,
 				DE538B9E2D38DCB600C55377 /* Resources */,
@@ -147,8 +191,6 @@
 				DE538BA32D38DCB600C55377 /* JobHuntTrackerTests */,
 			);
 			name = JobHuntTrackerTests;
-			packageProductDependencies = (
-			);
 			productName = JobHuntTrackerTests;
 			productReference = DE538BA02D38DCB600C55377 /* JobHuntTrackerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE538BBB2D38DCB600C55377 /* Build configuration list for PBXNativeTarget "JobHuntTrackerUITests" */;
 			buildPhases = (
+				712152F3426C3DB47A5FB4C6 /* [CP] Check Pods Manifest.lock */,
 				DE538BA62D38DCB600C55377 /* Sources */,
 				DE538BA72D38DCB600C55377 /* Frameworks */,
 				DE538BA82D38DCB600C55377 /* Resources */,
+				1E9724E22FEA3577405D2CF6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,8 +214,6 @@
 				DE538BAD2D38DCB600C55377 /* JobHuntTrackerUITests */,
 			);
 			name = JobHuntTrackerUITests;
-			packageProductDependencies = (
-			);
 			productName = JobHuntTrackerUITests;
 			productReference = DE538BAA2D38DCB600C55377 /* JobHuntTrackerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -244,6 +286,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E9724E22FEA3577405D2CF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobHuntTracker-JobHuntTrackerUITests/Pods-JobHuntTracker-JobHuntTrackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobHuntTracker-JobHuntTrackerUITests/Pods-JobHuntTracker-JobHuntTrackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JobHuntTracker-JobHuntTrackerUITests/Pods-JobHuntTracker-JobHuntTrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		712152F3426C3DB47A5FB4C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JobHuntTracker-JobHuntTrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		837782F4BE6FEC6C5D5F69F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JobHuntTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA9F277CB6CA2B794351DED5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobHuntTracker/Pods-JobHuntTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobHuntTracker/Pods-JobHuntTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JobHuntTracker/Pods-JobHuntTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF0ED6326117621F6F7DA1D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JobHuntTrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE538B832D38DCB500C55377 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -284,6 +429,7 @@
 /* Begin XCBuildConfiguration section */
 		DE538BB42D38DCB600C55377 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23265CF8C24E5CFCA51ED99A /* Pods-JobHuntTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +457,7 @@
 		};
 		DE538BB52D38DCB600C55377 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B570C279936FC4629C592791 /* Pods-JobHuntTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -457,6 +604,7 @@
 		};
 		DE538BB92D38DCB600C55377 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 149DD3F325C0DC88439E5C80 /* Pods-JobHuntTrackerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -475,6 +623,7 @@
 		};
 		DE538BBA2D38DCB600C55377 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBB7E7323439C69FE0AE9AFA /* Pods-JobHuntTrackerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -493,6 +642,7 @@
 		};
 		DE538BBC2D38DCB600C55377 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97E1D99461DE5C4E362E5268 /* Pods-JobHuntTracker-JobHuntTrackerUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -509,6 +659,7 @@
 		};
 		DE538BBD2D38DCB600C55377 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA16D22C72DCA89F7C3CE6D2 /* Pods-JobHuntTracker-JobHuntTrackerUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

@@ -6,6 +6,8 @@ target 'JobHuntTracker' do
   use_frameworks!
 
   # Pods for JobHuntTracker
+  pod 'Kingfisher', '~> 8.0'
+  pod 'SnapKit', '~> 5.7.0'
 
   target 'JobHuntTrackerTests' do
     inherit! :search_paths
