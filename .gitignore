@@ -1,0 +1,48 @@
+# Xcode
+.DS_Store
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+# Build
+build/
+DerivedData/
+*.ipa
+*.dSYM
+
+# Swift Package Manager
+.build/
+Package.resolved
+Packages/
+
+# CocoaPods
+Pods/
+*.xcworkspace
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+*.lock
+
+# Xcode automatically generated files
+*.moved-aside
+*.swp
+*.swm
+
+# Simulator logs
+core_simulator_device.log
+
+# Archives
+*.xcarchive
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# IDE Personal Settings
+*.ideworkspace
