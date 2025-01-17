@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         let tabBarController: UITabBarController = UITabBarController()
-        let homeVC: UIViewController = UIViewController()
+        let homeVC: UIViewController = ApplicationInputViewController()
         let profileVC: UIViewController = UIViewController()
         
         

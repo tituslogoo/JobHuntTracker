@@ -8,6 +8,7 @@ target 'JobHuntTracker' do
   # Pods for JobHuntTracker
   pod 'Kingfisher', '~> 8.0'
   pod 'SnapKit', '~> 5.7.0'
+  pod 'TextFieldEffects'
 
   target 'JobHuntTrackerTests' do
     inherit! :search_paths
