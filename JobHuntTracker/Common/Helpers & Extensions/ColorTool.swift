@@ -9,16 +9,15 @@ import Foundation
 import UIKit
 
 public final class ColorTool: UIColor, @unchecked Sendable {
-    static var darkPrimary: UIColor = UIColor.black
-    static var darkSecondary: UIColor = UIColor.darkGray
-    static var darkTrayBackground: UIColor = UIColor(hex: "#333333")
     static var lightPrimary: UIColor = UIColor.white
     
+    static var darkPrimary: UIColor = UIColor.black
+    static var darkSecondary: UIColor = UIColor.darkGray
+    static var defaultBackground: UIColor = UIColor(hex: "#333333")
+    
     // MARK: Text
-    static var defaultText: UIColor = {
-        // todo: Validate light and dark later
-        return UIColor.black
-    }()
+    static var textLightPrimary: UIColor = UIColor.white
+    static var textPlaceholder: UIColor = UIColor(hex: "#B3B3B3")
     
     static var randomColor: UIColor = {
         UIColor(
