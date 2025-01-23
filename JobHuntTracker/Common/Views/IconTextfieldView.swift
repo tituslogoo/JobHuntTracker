@@ -10,49 +10,52 @@ import SnapKit
 import UIKit
 import TextFieldEffects
 
-struct IconTextFieldAttributes {
+struct IconTextFieldData {
     let placeholderTitle: String
-    let font: UIFont
-    let placeholderColor: UIColor
-    let backgroundColor: UIColor
-    let textColor: UIColor
-    let returnType: UIReturnKeyType
+    let image: UIImage?
+    let textFieldAttributes: TextFieldAttributes
 }
 
 final class IconTextfieldView: UIView {
     // Right now only supports Minoru Format
+    private let defaultIconSize: CGSize = CGSize(width: 25.0, height: 25.0)
     
     // MARK: UI
     private lazy var stackView: UIStackView = {
-        let stackView: UIStackView = UIStackView(arrangedSubviews: [iconImageView, textField])
+        let stackView: UIStackView = UIStackView(arrangedSubviews: [imageContainerView, textField])
         stackView.axis = .horizontal
-        stackView.spacing = 8.0
+        stackView.spacing = 16.0
         
         return stackView
     }()
     
+    private lazy var imageContainerView: UIView = {
+        let view: UIView = UIView()
+        return view
+    }()
+    
     private lazy var iconImageView: UIImageView = {
-        let imageView: UIImageView = UIImageView(image: UIImage(named: "icon_search"))
+        let imageView: UIImageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
-        
+        imageView.image = image
         return imageView
     }()
     
     private lazy var textField: MinoruTextField = {
         let textField: MinoruTextField = MinoruTextField()
-        textField.placeholder = NSLocalizedString(attributes.placeholderTitle, comment: "")
-        textField.font = attributes.font
-        textField.placeholderColor = attributes.placeholderColor
-        textField.backgroundColor = attributes.backgroundColor
-        textField.textColor = attributes.textColor
-        textField.returnKeyType = attributes.returnType
+        textField.placeholder = NSLocalizedString(data.placeholderTitle, comment: "")
+        textField.font = data.textFieldAttributes.font
+        textField.placeholderColor = data.textFieldAttributes.placeholderColor
+        textField.backgroundColor = data.textFieldAttributes.backgroundColor
+        textField.textColor = data.textFieldAttributes.textColor
+        textField.returnKeyType = data.textFieldAttributes.returnType
         textField.delegate = delegate
         
         return textField
     }()
     
     // MARK: Properties
-    let attributes: IconTextFieldAttributes
+    let data: IconTextFieldData
     var image: UIImage
     weak var delegate: UITextFieldDelegate? {
         didSet {
@@ -61,12 +64,11 @@ final class IconTextfieldView: UIView {
     }
     
     init(
-        attributes: IconTextFieldAttributes,
-        image: UIImage?,
+        data: IconTextFieldData,
         delegate: UITextFieldDelegate? = nil
     ) {
-        self.attributes = attributes
-        self.image = image ?? UIImage()
+        self.data = data
+        self.image = data.image ?? UIImage()
         super.init(frame: .zero)
         self.delegate = delegate
         
@@ -86,8 +88,12 @@ private extension IconTextfieldView {
             make.edges.equalToSuperview()
         }
         
+        imageContainerView.addSubview(iconImageView)
         iconImageView.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.size.equalTo(defaultIconSize)
             make.height.equalTo(iconImageView.snp.width)
+            make.leading.trailing.equalToSuperview()
         }
     }
 }

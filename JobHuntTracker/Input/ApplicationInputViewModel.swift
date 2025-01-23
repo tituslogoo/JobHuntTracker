@@ -6,13 +6,22 @@
 //
 
 import Foundation
+import UIKit
 
 protocol ApplicationInputViewModelProcotol {
-    var textFieldAttributes: IconTextFieldAttributes { get }
+    var companyTextFieldData: IconTextFieldData { get }
+    var positionTextFieldData: IconTextFieldData { get }
+    var locationTextFieldData: IconTextFieldData { get }
 }
 
 final class ApplicationInputViewModel: ApplicationInputViewModelProcotol {
-    var textFieldAttributes: IconTextFieldAttributes
+    var companyTextFieldData: IconTextFieldData
+    var positionTextFieldData: IconTextFieldData
+    var locationTextFieldData: IconTextFieldData
     
-    
+    init(input: ApplicationInputViewModelInput) {
+        companyTextFieldData = input.companyTextFieldData
+        positionTextFieldData = input.positionTextFieldData
+        locationTextFieldData = input.locationTextFieldData
+    }
 }

@@ -30,38 +30,29 @@ final class ApplicationInputViewController: UIViewController {
         return stackView
     }()
     
-    private lazy var companyNameTextFieldView: IconTextfieldView = {
+    private lazy var companyIconTextFieldView: IconTextfieldView = {
         let textField: IconTextfieldView = IconTextfieldView(
-            attributes: viewModel.textFieldAttributes,
-            image: UIImage(named: "ic-company"),
+            data: viewModel.companyTextFieldData,
             delegate: self
         )
         
         return textField
     }()
     
-    private lazy var positionTextField: MinoruTextField = {
-        let textField: MinoruTextField = MinoruTextField()
-        textField.placeholder = NSLocalizedString("label.placeholder.position", comment: "")
-        textField.font = FontTool.roboto(withSize: 16.0)
-        textField.placeholderColor = ColorTool.lightPrimary
-        textField.backgroundColor = ColorTool.lightPrimary
-        textField.textColor = ColorTool.darkPrimary
-        textField.returnKeyType = .next
-        textField.delegate = self
+    private lazy var positionIconTextFieldView: IconTextfieldView = {
+        let textField: IconTextfieldView = IconTextfieldView(
+            data: viewModel.positionTextFieldData,
+            delegate: self
+        )
         
         return textField
     }()
     
-    private lazy var locationTextField: MinoruTextField = {
-        let textField: MinoruTextField = MinoruTextField()
-        textField.placeholder = NSLocalizedString("label.placeholder.location", comment: "")
-        textField.font = FontTool.roboto(withSize: 16.0)
-        textField.placeholderColor = ColorTool.lightPrimary
-        textField.backgroundColor = ColorTool.lightPrimary
-        textField.textColor = ColorTool.darkPrimary
-        textField.returnKeyType = .next
-        textField.delegate = self
+    private lazy var locationIconTextFieldView: IconTextfieldView = {
+        let textField: IconTextfieldView = IconTextfieldView(
+            data: viewModel.locationTextFieldData,
+            delegate: self
+        )
         
         return textField
     }()
@@ -108,18 +99,18 @@ private extension ApplicationInputViewController {
             make.trailing.equalToSuperview().inset(defaultHorizontalSpacer)
         }
         
-        stackView.addArrangedSubview(companyNameTextFieldView)
-        companyNameTextFieldView.snp.makeConstraints { make in
+        stackView.addArrangedSubview(companyIconTextFieldView)
+        companyIconTextFieldView.snp.makeConstraints { make in
             make.height.equalTo(defaultTextfieldHeight)
         }
         
-        stackView.addArrangedSubview(positionTextField)
-        positionTextField.snp.makeConstraints { make in
+        stackView.addArrangedSubview(positionIconTextFieldView)
+        positionIconTextFieldView.snp.makeConstraints { make in
             make.height.equalTo(defaultTextfieldHeight)
         }
         
-        stackView.addArrangedSubview(locationTextField)
-        locationTextField.snp.makeConstraints { make in
+        stackView.addArrangedSubview(locationIconTextFieldView)
+        locationIconTextFieldView.snp.makeConstraints { make in
             make.height.equalTo(defaultTextfieldHeight)
         }
     }
@@ -128,8 +119,8 @@ private extension ApplicationInputViewController {
 // MARK: UITextFieldDelegate
 extension ApplicationInputViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == companyNameTextFieldView {
-            positionTextField.becomeFirstResponder()
+        if textField == companyIconTextFieldView {
+            positionIconTextFieldView.becomeFirstResponder()
         }
         return true
     }
