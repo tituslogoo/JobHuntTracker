@@ -1,0 +1,11 @@
+//
+//  Localizable.strings
+//  JobHuntTracker
+//
+//  Created by Titus Logo on 17/01/25.
+//
+
+"label.title.input-main" = "Job Application Input";
+"label.placeholder.company-name" = "Company Name";
+"label.placeholder.position" = "Position";
+"label.placeholder.location" = "Location";
